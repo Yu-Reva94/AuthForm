@@ -6,7 +6,7 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-<form action="" method="post" class="form">
+<form action="" method="post" class="reg-form">
     <h2>Регистрация пользователя</h2>
     <label for="login">Логин:</label>
     <input type="text" name="login">

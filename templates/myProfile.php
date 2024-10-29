@@ -22,13 +22,14 @@ if (isset($_SESSION["login"])) { ?>
     <label for="secondPass">Повторите пароль:</label>
     <input type="password" name="secondPass" value="<?= $_SESSION["password"] ?>">
     <button type="submit" name="edit-btn" class="edit-btn">Изменить</button>
+    <button type="submit" name="todo-btn" class="todo-btn">Список дел</button>
     <button type="submit" name="logout-btn" class="logout-btn">Выйти</button>
     <p class="msg-err"><? errorsMessage($errMsg) ?> </p>
     <p class="success"><?= $editSuccess; ?></p>
 </form>
 </body>
 <?php } else {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 ?>

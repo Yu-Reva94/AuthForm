@@ -12,14 +12,6 @@ function renderTemplate($fileName, $data)
     }
 }
 
-//Проверям ошибки в массиве и выводим на экран
-function errorsMessage($errMsg)
-{
-    if (isset($errMsg) && count($errMsg) > 0) {
-        foreach ($errMsg as $err)
-            echo $err . '<br>';
-    }
-}
 //подключаем данные из env
 function loadEnv($filePath)
 {
@@ -41,6 +33,14 @@ function loadEnv($filePath)
     return $env;
 }
 
+//Проверям ошибки в массиве и выводим на экран
+function errorsMessage($errMsg)
+{
+    if (isset($errMsg) && count($errMsg) > 0) {
+        foreach ($errMsg as $err)
+            echo $err . '<br>';
+    }
+}
 
 
 
