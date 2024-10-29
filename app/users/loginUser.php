@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['log-btn'])) {
         $_SESSION['id'] = $res['id'];
         $_SESSION['password'] = $userFirstPass;
         $_SESSION['login'] = $res['login'];
-        header("Location: index.php?mode=myProfile");
+        header("Location: index.php?mode=todoList");
         exit();
     } elseif (!empty($userLogin) && !empty($userFirstPass)) {
         $errMsg[] = "Неверный логин или пароль";

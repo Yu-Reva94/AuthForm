@@ -50,5 +50,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit-btn'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['todo-btn'])) {
-    header('Location: index.php?mode=todoList.php');
+    header('Location: index.php?mode=todoList');
 }
